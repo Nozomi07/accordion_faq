@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+html {
+    height: 100%;
+    /*gradientのrepeat防ぐため*/
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background: white;
+    border-radius: 1em;
+    width: 920px;
+    height: 509px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 1260% 65%;
+}
+
+.answer_title {
+    display: none;
+    font-weight: 100;
+}
+
+.accordion_title {
+    margin-top: 0;
+}
+
+.question_title {
+    font-weight: 400;
+}
+
+.image_wrapper {
+    position: relative;
+}
+
+.image_wrapper_inner {
+    background-image: url(./images/illustration-woman-online-desktop.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: 120% center;
+}
+
+.box {
+    left: -8%;
+    position: absolute;
+    top: 42%;
+}
+
+.accordion_wrapper {
+    justify-content: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e8e8ea;
+    width: 400px;
+}
+
+.accordion-item>.answer_title {
+    display: none;
+}
+
+.accordion_q {
+    display: flex;
+    justify-content: space-between;
+}
+
+.active>.answer_title {
+    display: block;
+    padding-bottom: 1.3rem;
+    color: black;
+}
+
+.accordion_q img {
+    align-self: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.active img {
+    transform: rotate(180deg);
+}
+
+.active h3 {
+    font-weight: 700;
+}

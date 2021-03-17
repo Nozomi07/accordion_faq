@@ -1,15 +1,15 @@
-var Q = document.getElementsByClassName("question_title")
-for (let i = 0; i < Q.length; i++) {
-    Q[i].addEventListener('mouseenter', () => {
-        Q[i].style.color = "orange";
+const questionList = document.getElementsByClassName("question")
+
+for (let i = 0; i < questionList.length; i++) {
+    console.log(questionList[i])
+    questionList[i].addEventListener('mouseenter', () => {
+        questionList[i].style.color = "orange";
+    });
+    questionList[i].addEventListener('mouseleave', () => {
+        questionList[i].style.color = "hsl(238, 29%, 16%)";
     });
 }
-var Q = document.getElementsByClassName("question_title")
-for (let i = 0; i < Q.length; i++) {
-    Q[i].addEventListener('mouseleave', () => {
-        Q[i].style.color = "hsl(238, 29%, 16%)";
-    });
-}
+  
 
 this.addEventListener("DOMContentLoaded", () => {
     const accordion = document.querySelectorAll(".accordion_q")

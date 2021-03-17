@@ -1,8 +1,7 @@
 const questionList = document.getElementsByClassName("question")
 
 for (let i = 0; i < questionList.length; i++) {
-    console.log(questionList[i])
-    questionList[i].addEventListener('mouseenter', () => {
+     questionList[i].addEventListener('mouseenter', () => {
         questionList[i].style.color = "orange";
     });
     questionList[i].addEventListener('mouseleave', () => {

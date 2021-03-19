@@ -1,14 +1,17 @@
-const questionList = document.getElementsByClassName("question")
+//const を使う　let だと変数変えると思われる
 
-for (let i = 0; i < questionList.length; i++) {
-     questionList[i].addEventListener('mouseenter', () => {
-        questionList[i].style.color = "orange";
-    });
-    questionList[i].addEventListener('mouseleave', () => {
-        questionList[i].style.color = "hsl(238, 29%, 16%)";
-    });
-}
-  
+this.addEventListener("DOMContentLoaded", () => {
+    const questionList = document.getElementsByClassName("question")
+    for (let i = 0; i < questionList.length; i++) {
+        questionList[i].addEventListener('mouseenter', () => {
+            questionList[i].style.color = "orange";
+        });
+        questionList[i].addEventListener('mouseleave', () => {
+            questionList[i].style.color = "hsl(238, 29%, 16%)";
+        });
+    }
+});
+
 
 this.addEventListener("DOMContentLoaded", () => {
     const accordion = document.querySelectorAll(".accordion_q")
